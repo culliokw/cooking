@@ -89,7 +89,6 @@ main img.characters {max-width: 100px;}
 body.home nav ul li.home, body.journey nav ul li.journey { border-bottom-color: black }
 
 @media (max-width: 650px){
-  p { margin-bottom: 25px; font-size: 18px; line-height: 30px; max-width: 400px }
   main ul.recipes { columns:1 }
   main p.col2 { columns:1 }
   main > div.col2 { columns: 1 }
