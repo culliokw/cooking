@@ -89,7 +89,7 @@ main img.characters {max-width: 100px;}
 body.home nav ul li.home, body.journey nav ul li.journey { border-bottom-color: black }
 
 @media (max-width: 650px){
-  main p { margin-bottom: 25px; font-size: 18px; line-height: 30px; max-width: 650px }
+  p { margin-bottom: 25px; font-size: 18px; line-height: 30px; max-width: 400px }
   main ul.recipes { columns:1 }
   main p.col2 { columns:1 }
   main > div.col2 { columns: 1 }
@@ -104,7 +104,7 @@ body.home nav ul li.home, body.journey nav ul li.journey { border-bottom-color: 
 
 @media (prefers-color-scheme: dark){
   body {background: #111; color: white;}
-  header a img {filter: invert(0)}
+  /* header a img {filter: invert(0)} */
   body.home nav ul li.home, body.journey { border-bottom-color: white }
   nav ul {border-bottom-color: white;}
   .monochrome {filter: invert(1);}
