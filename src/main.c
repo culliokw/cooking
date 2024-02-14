@@ -11,7 +11,8 @@
 
 enum RecipeType {
 	maindish,
-	toppings
+	toppings,
+	sweet
 };
 
 typedef struct Ingredient {
@@ -173,9 +174,9 @@ create_serving(Ingredient *ingredient, char *quantity)
 	return a;
 }
 
-char recipe_type_names[20][32] = {"main", "toppings"};
-int recipes_by_types_len[toppings + 1] = {0, 0};
-char *recipes_by_types[toppings + 1][100];
+char recipe_type_names[20][32] = {"main", "toppings", "sweet"};
+int recipes_by_types_len[sweet + 1] = {0, 0};
+char *recipes_by_types[sweet + 1][100];
 
 void
 categorize_recipe(char *name, enum RecipeType type)
@@ -349,24 +350,11 @@ build_home(Ingredient *ingredients[], int ingredients_len, int recipes_len)
 	fputs("<dl class='baseimage'>", f);
 	fprintf(f, "<img class='right' src='../media/icons/%s.JPG'/>", base_image);
 	fputs("</dl>", f);
-	// fputs("<dl class='ingredients'>", f);
-	// for(int i = 0; i < ingredients_len; ++i) {
-	// 	if(!ingredients[i]->featured)
-	// 		continue;
-	// 	char ingr_path[STR_BUF_LEN];
-	// 	to_lowercase(ingredients[i]->name, ingr_path, STR_BUF_LEN);
-	// 	fprintf(f,
-	// 		"<dt><a href='%s.html'><img src='../media/ingredients/%s.png' loading='lazy'/><b>%s</b></a></dt>",
-	// 		ingr_path,
-	// 		ingr_path,
-	// 		ingredients[i]->name);
-	// }
-	// fputs("</dl>", f);
 
 	fprintf(f, "<h2 id='recipes'>%d Recipes</h2>", recipes_len);
 
 	fputs("<ul class='recipes col3'>", f);
-	for(int i = 0; i < toppings + 1; ++i) {
+	for(int i = 0; i < sweet + 1; ++i) {
 		fprintf(f, "<h3>%s</h3>", recipe_type_names[i]);
 		for(int j = 0; j < recipes_by_types_len[i]; ++j) {
 			char recipe_path[STR_BUF_LEN];

@@ -5,7 +5,7 @@ body { font-family: 'Helvetica Neue', Helvetica, Arial; margin: 0px;padding: 45p
 hr { clear:both }
 ul { display: block }
 img { max-width: 100% }
-p { margin-bottom: 25px; font-size: 18px; line-height: 30px; max-width: 600px }
+p { margin-bottom: 25px; font-size: 18px; line-height: 30px; max-width: 800px }
 p a { font-weight: bold; cursor: pointer; text-decoration: underline }
 p a:hover { text-decoration: none }
 p a:focus { text-decoration: dotted underline }
@@ -27,7 +27,7 @@ main h3 { text-transform: capitalize; font-size:24px; border-bottom:2px solid bl
 main h4 { text-transform: capitalize; font-size:20px; line-height: 45px }
 main > p.notice { background: #eee;padding: 20px;line-height: 20px;font-size: 14px }
 main > div { margin-bottom: 45px }
-main > div > p { margin-bottom: 25px; font-size: 18px; line-height: 30px; max-width: 600px }
+main > div > p { margin-bottom: 25px; font-size: 18px; line-height: 30px; max-width: 800px }
 main > div > p.small { font-size:14px; line-height: 22px; max-width: 500px }
 main > div.col2 { columns: 1; max-width: 800px; column-gap: 45px }
 main > div > p > img { display: inline-block }
@@ -38,7 +38,7 @@ main > div > p a.external:after { content:"*"; color:#999 }
 main > div > p b { font-weight: bold }
 main > p b { font-weight: bold }
 main > div > p b.head { text-transform: capitalize;font-size: 24px;line-height: 45px;display: block;margin: 30px 0px }
-main > ul.col2 { columns: 2; margin-bottom:30px; position: relative }
+main > ul.col2 { columns: 1; margin-bottom:30px; position: relative }
 main > ul { display: block; margin-bottom:30px; position: relative }
 main > ul > li { max-width:550px; margin-bottom:15px; font-size:18px; padding-left:30px; line-height: 24px; font-size:18px; position: relative;}
 main > ul > li:before { content:"•"; position: absolute; margin-left:-30px }
@@ -67,8 +67,8 @@ main ul.instructions a:hover { text-decoration: underline; cursor: pointer }
 main ul.instructions a:focus { text-decoration: underline; cursor: pointer }
 main ul.instructions i { font-weight: bold }
 main ul.instructions u { font-size: 12px;text-transform: uppercase;padding: 3px 5.5px;display: inline-block;font-weight: bold;border-radius: 3px;border: 2px solid black;line-height: 15px}
-main ul.recipes { columns: 3; }
-main ul.recipes h3 { margin-top:32px }
+main ul.recipes { columns: 3;  }
+main ul.recipes h3 { margin-top:60px }
 main ul.recipes h3:first-child { margin-top:0px }
 main ul.recipes li { font-size:14px; line-height: 25px; margin-bottom: 0px }
 main ul.recipes li a { text-decoration: none; text-transform: capitalize }
@@ -93,12 +93,12 @@ body.home nav ul li.home, body.journey nav ul li.journey { border-bottom-color: 
   main p.col2 { columns:1 }
   main > div.col2 { columns: 1 }
   header a img { max-width: 200px }
-  main dl.baseimage { display: block }
-  main dl.baseimage dt { display:block; min-height: auto;text-align: left;border: 0; width: auto; line-height: 20px } 
-  main dl.baseimage dt > * { display: inline-block !important } 
-  main dl.baseimage dt b { display: inline !important; margin:0;padding:0px 10px 0px 0px } 
-  main dl.baseimage dt img { display: none !important }
-  main dl.baseimage dt u { display: inline-block; font-size:12px }
+  main dl.ingredients { display: block }
+  main dl.ingredients dt { display:block; min-height: auto;text-align: left;border: 0; width: auto; line-height: 20px } 
+  main dl.ingredients dt > * { display: inline-block !important } 
+  main dl.ingredients dt b { display: inline !important; margin:0;padding:0px 20px 0px 0px } 
+  main dl.ingredients dt img { display: none !important }
+  main dl.ingredients dt u { display: inline-block; font-size:12px }
   }
 
 @media (prefers-color-scheme: dark){
